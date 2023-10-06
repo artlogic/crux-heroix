@@ -127,6 +127,17 @@ header {
 
 /* main section styles */
 
+/* events grid */
+
+.schedule li {
+  margin-left: 2rem;
+  padding-left: 0;
+}
+
+.schedule li > ul {
+  margin-bottom: 1rem;
+}
+
 /* gallery grid */
 
 .gallery > .gallery__list {
