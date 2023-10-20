@@ -1,246 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crux Heroix</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crux Heroix</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" type="text/css" />
+  </head>
 
-  <link href="css/reset.css" rel="stylesheet" type="text/css" />
-  <link href="css/styles.css" rel="stylesheet" type="text/css" />
-</head>
+  <body class="container">
+    <header role="banner" class="site-header sticky">
+      <div class="nav-wrapper">
+        <a class="site-logo" href="/" rel="home" title="to homepage">
+          <h1>Crux Heroix</h1>
+        </a>
+        <button aria-controls="primary-nav" aria-expanded="false" id="mobile-nav-toggle" class="mobile-nav-toggle">
+          <i aria-hidden="true" class="bx bx-menu bx-lg" onclick="changeIcon(this)"></i>
+          <span class="visually-hidden">menu</span>
+        </button>
+        <nav role="navigation" aria-label="Main" id="primary-navigation" class="primary-navigation">
+          <ul role="list" aria-label="Primary" class="nav-list">
+            <li><a href="/event.html" class="nav-link">Events</a></li>
+            <li><a href="#" class="nav-link">Follow Us</a></li>
+            <li><a href="#" class="nav-link">Newsletter</a></li>
+            <li><a href="#" class="nav-link">Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<body class="grid">
-  <header class="full-bleed header">
-    <h1 class="logo">Crux Heroix</h1>
-    <nav>
-      <ul class="nav">
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Links</a></li>
-        <li><a href="#">Newsletter</a></li>
-        <li><a href="#">Gallery</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main id="content" role="main" class="main-content" tabindex="-1"></main>
 
-  <main>
-    <section class="events">
-      <h2>Events</h2>
-      <article>
-        <h3>Crux Heroix - Red River Gorge November Trip 2023</h3>
-        <p>
-          <strong>WHERE:</strong> Slade, KY<br>
-          <strong>WHEN:</strong> November 3-5 2023
-        </p>
-        <p>
-          The Red River Gorge is located in the state of Kentucky. The Red is in the eastern part of the state, about 60
-          miles southeast of Lexington. Climbing here in the spring is great but there is a greater chance of rain than
-          in the fall.
-        </p>
-        <p>
-          We will be staying at <a href="http://landofthearches.com/">Land of the Arches (LOTA) campground</a>. It is an
-          “open site” campground with WIFI, restroom facilities and hot showers. However, there will not be access to a
-          fridge and potable water. The most reliable time to charge your phone will be on your drive but there are
-          outlets.
-        </p>
-        <p>
-          Climbing area (Muir Valley-RRGCC) Waiver: Muir Valley – Kentucky's Premier Climbing Destination.
-        </p>
-        <p>
-          All belaying will be done on assisted braking devices unless otherwise discussed with the Crux Heroix Admin
-          crew.
-        </p>
-        <p><strong>Expected Schedule:</strong></p>
-        <ul class="schedule">
-          <li>
-            <ul>Fri, November 3
-              <li>Varying arrival times</li>
-              <li>Campfire</li>
-              <li>Lights out @ 11pm</li>
-            </ul>
-          </li>
-          <li>
-            <ul>Sat, November 4
-              <li>Depart camp for crag @ 7:15am</li>
-              <li>Hike back from crag @ 5pm</li>
-              <li>Lights out @ 11pm</li>
-            </ul>
-          </li>
-          <li>
-            <ul>Fri, November 5 (this day is flexible)
-              <li>Depart camp for crag @ 7:15am</li>
-              <li>Depart The Red @ 1pm</li>
-            </ul>
-          </li>
-        </ul>
-      </article>
-    </section>
-    <section class="resources">
-      <h2>Links</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        et dolor at diam tempus sagittis. Sed porta, est a commodo finibus,
-        turpis augue varius purus, non vehicula felis sem in velit. Vestibulum
-        arcu dolor, elementum <strong>et euismod</strong> sit amet, volutpat
-        in libero.
-      </p>
-    </section>
-    <section class="mailing-list">
-      <h2>Newsletter</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        et dolor at diam tempus sagittis. Sed porta, est a commodo finibus,
-        turpis augue varius purus, non vehicula felis sem in velit. Vestibulum
-        arcu dolor, elementum <em>et euismod</em> sit amet, volutpat in
-        libero.
-      </p>
-    </section>
-    <section class="gallery">
-      <h2>Gallery</h2>
-      <ul class="gallery__list">
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22942_hires.jpg"
-              alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA23021_hires.jpg"
-              alt="A first look at dunes" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA23002_hires.jpg"
-              alt="K2-138 6 Planets Artwork (Artist's Illustration) " />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA21212_hires.jpg"
-              alt="Small Prominences" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22983_hires.jpg" alt="Ezinu Crater" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22990_hires.jpg" alt="Polar Ice" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22963_hires.jpg" alt="Jupiter" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22918_hires.jpg"
-              alt="Star Gaia 17pbi Seen by Spitzer" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22900_hires.jpg"
-              alt="Another Cloudy Day" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22941_hires.jpg"
-              alt="South Equatorial Belt Brown Barge Close-up" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22936_hires.jpg"
-              alt="Earth-based Observation of Jupiter" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22937_hires.jpg"
-              alt="Jupiter's South Tropical Disturbance" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22933_hires.jpg"
-              alt="Jupiter's Southern Circumpolar Cyclones" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22906_hires.jpg"
-              alt=" Juno Flyby Movie " />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22895_hires.jpg"
-              alt="Swiss Cheese on a Red Planet" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA21211_hires.jpg"
-              alt="Solar Active Region's Cameo Appearance" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22914_hires.jpg"
-              alt="Bow Shock Around Young Star" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22695_hires.jpg"
-              alt="Jupiter's North Equatorial Belt" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22770_hires.jpg"
-              alt="Titan Mosaic: The Surface Under the Haze" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA18144_hires.jpg"
-              alt="Reappearing Coronal Hole" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22820_hires.jpg"
-              alt="NASA's ASTER Captures Lava Flow, Ash from Guatemala Volcano" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22869_hires.jpg"
-              alt="Active Dunes in Wirtz Crater" />
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22569_hires.jpg"
-              alt="Supernova Remnant G54" />
-          </figure>
-        </li>
-      </ul>
-    </section>
-  </main>
+    <footer role="contentinfo" class="site-footer">some stuff</footer>
 
-  <footer class="full-bleed">
-    <p class="copyright">&copy; Crux Heroix, 2023</p>
-  </footer>
-</body>
-
+    <script src="js/menu.js"></script>
+  </body>
 </html>
