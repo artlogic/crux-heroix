@@ -2,40 +2,132 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crux Heroix</title>
+    <title>Test Grid</title>
 
-    <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" type="text/css" />
   </head>
+  <body>
+    <div class="foundation-grid">
+      <header role="banner" class="header sticky">
+        <div class="nav-wrapper">
+          <a class="site-logo" href="/" rel="home" title="to homepage">
+            <h1>Crux Heroix</h1>
+          </a>
+          <button aria-controls="primary-nav" aria-expanded="false" id="mobile-nav-toggle" class="mobile-nav-toggle">
+            <i aria-hidden="true" class="bx bx-menu bx-lg" onclick="changeIcon(this)"></i>
+            <span class="visually-hidden">menu</span>
+          </button>
+          <nav role="navigation" aria-label="Main" id="primary-navigation" class="primary-navigation">
+            <ul role="list" aria-label="Primary" class="nav-list">
+              <li><a href="/event.html" class="nav-link">Events</a></li>
+              <li><a href="#" class="nav-link">Follow Us</a></li>
+              <li><a href="#" class="nav-link">Newsletter</a></li>
+              <li><a href="#" class="nav-link">Gallery</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-  <body class="container">
-    <header role="banner" class="site-header sticky">
-      <div class="nav-wrapper">
-        <a class="site-logo" href="/" rel="home" title="to homepage">
-          <h1>Crux Heroix</h1>
-        </a>
-        <button aria-controls="primary-nav" aria-expanded="false" id="mobile-nav-toggle" class="mobile-nav-toggle">
-          <i aria-hidden="true" class="bx bx-menu bx-lg" onclick="changeIcon(this)"></i>
-          <span class="visually-hidden">menu</span>
-        </button>
-        <nav role="navigation" aria-label="Main" id="primary-navigation" class="primary-navigation">
-          <ul role="list" aria-label="Primary" class="nav-list">
-            <li><a href="/event.html" class="nav-link">Events</a></li>
-            <li><a href="#" class="nav-link">Follow Us</a></li>
-            <li><a href="#" class="nav-link">Newsletter</a></li>
-            <li><a href="#" class="nav-link">Gallery</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+      <main id="content" role="main" class="main-content" tabindex="-1">
+        <section class="events">
+          <h2 class="event-heading">Events</h2>
+          <article class="event-grid">
+            <h3 class="event-title span-3">Crux Heroix - Red River Gorge November Trip 2023</h3>
+            <div class="date-location">
+              <h4>Event Details</h4>
+              <p>
+                <strong>Where:</strong>
+                Slade, KY
+                <br />
+                <strong>When:</strong>
+                November 3-5, 2023
+              </p>
+            </div>
+            <div class="event-description span-2">
+              <h4>Event Description:</h4>
+              <p>
+                The Red River Gorge is located in the state of Kentucky. The Red is in the eastern part of the state,
+                about 60 miles southeast of Lexington. Climbing here in the spring is great but there is a greater
+                chance of rain than in the fall.
+              </p>
+              <p>
+                We will be staying at
+                <a href="http://landofthearches.com/">Land of the Arches (LOTA) campground</a>
+                . It is an “open site” campground with WIFI, restroom facilities and hot showers. However, there will
+                not be access to a fridge and potable water. The most reliable time to charge your phone will be on your
+                drive but there are outlets.
+              </p>
+              <p>Climbing area (Muir Valley-RRGCC) Waiver: Muir Valley – Kentucky's Premier Climbing Destination.</p>
+              <p>
+                All belaying will be done on assisted braking devices unless otherwise discussed with the Crux Heroix
+                Admin crew.
+              </p>
+            </div>
+            <div class="event-schedule">
+              <h4>Event Schedule</h4>
+              <div>
+                <p><strong>Fri., November 3</strong></p>
+                <ul role="list" class="itinerary">
+                  <li role="list-item">Varying arrival times</li>
+                  <li role="list-item">Campfire</li>
+                  <li role="list-item">Lights out @ 11pm</li>
+                </ul>
+              </div>
+              <div>
+                <p><strong>Sat., November 4</strong></p>
+                <ul role="list" class="itinerary">
+                  <li>Depart camp for crag @ 7:15am</li>
+                  <li>Hike back from crag @ 5pm</li>
+                  <li>Lights out @ 11pm</li>
+                </ul>
+              </div>
+              <div>
+                <p><strong>Sun., November 5</strong></p>
+                <ul role="list" class="itinerary">
+                  <li>Depart camp for crag @ 7:15am</li>
+                  <li>Depart The Red @ 1pm</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </section>
 
-    <main id="content" role="main" class="main-content" tabindex="-1"></main>
+        <section class="social-media">
+          <h2 class="socials-heading">Follow Us!</h2>
+          <article class="social-grid">
+            <div class="instagram">
+              <a class="social-link" href="https://www.instagram.com/send_sistersmi/">
+                <i class="bx bxl-instagram social-icon"></i>
+                <p class="social-p">Follow us on Instagram</p>
+              </a>
+            </div>
+            <div class="facebook">
+              <a class="social-link" href="https://www.facebook.com/groups/4782167088461600/">
+                <i class="bx bxl-facebook-circle social-icon"></i>
+                <p class="social-p">Join our Facebook Group</p>
+              </a>
+            </div>
+            <div class="newsletter">
+              <a
+                class="social-link"
+                href="https://goodticklebrain.us8.list-manage.com/subscribe?u=62c2c9b2ea2f83fbe53eaf2ce&id=a327b6336a">
+                <i class="bx bx-envelope social-icon"></i>
+                <p class="social-p">Sign up for our Newsletter</p>
+              </a>
+            </div>
+          </article>
+        </section>
+      </main>
 
-    <footer role="contentinfo" class="site-footer">some stuff</footer>
-
+      <footer class="footer">
+        <p class="copyright">
+          <i class="bx bx-copyright"></i>
+          Crux Heroix, 2023
+        </p>
+      </footer>
+    </div>
     <script src="js/menu.js"></script>
   </body>
 </html>
